@@ -1,0 +1,15 @@
+
+.countdown {
+    text-align: center;
+    font-weight: bold;
+    .time {
+      color: $primary-color;
+      font-size: 3rem;
+    }
+    .label {
+      display: block;
+      text-transform: uppercase;
+      color: #999;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+#specials {
+  .datetime {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    background: rgba($primary-color, 0.8);
+    top: 50%;
+    transform-origin: center center;
+    left: 26px;
+    padding: 15px;
+    width: 100%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  .img {
+    background-size: cover;
+    background-position: center;
+  }
+  .row {
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+  }
+  .details {
+    color: #666;
+    h4 {
+      color: #000;
+    }
+    padding: 75px 50px;
+  }
+  header {
+    margin-bottom: 100px;
+    h2 {
+      color: #fff;
+    }
+  }
+}

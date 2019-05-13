@@ -1,0 +1,81 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/ekko-lightbox/dist/ekko-lightbox.css";
+
+@import "globals";
+@import "navbar";
+@import "hero";
+@import "welcome";
+@import "discovery";
+@import "specials";
+@import "staff";
+@import "footer";
+@import "contact";
+@import "buttons";
+@import "gallery";
+@import "countdown";
+@import "menu";
+@import "modals";
+.page-title {
+  min-height: 545px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.img-wrapper {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 2rem;
+  a {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  img {
+    transition: all 2s;
+  }
+  &:hover {
+    img {
+      transform: scale(1.5) rotate(10deg);
+    }
+  }
+}
+i {
+  vertical-align: middle;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.parallax {
+  background-color: rgba($secondary-color, 0.85);
+  background-size: cover;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bar {
+  position: relative;
+  border-top:5px solid $primary-color;
+  border-bottom:5px solid $primary-color;
+  text-align: center;
+  color: #fff;
+  padding: 100px 0;
+  header {
+    margin-bottom: 0;
+  }
+}

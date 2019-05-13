@@ -1,0 +1,16 @@
+.modal {
+  .modal-header {
+    border-bottom: 0;
+  }
+  .modal-footer {
+    border-top: 0;
+    .btn-outline-dark {
+      &:hover {
+        background: #fff;
+      }
+    }
+  }
+  .modal-body {
+    padding: 0 1rem;
+  }
+}

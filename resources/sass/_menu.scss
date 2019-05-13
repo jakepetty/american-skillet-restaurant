@@ -1,0 +1,13 @@
+#restaurant-menu {
+  #specials {
+    background-color: #fafafa;
+    header {
+      h2 {
+        color: $secondary-color;
+      }
+    }
+  }
+  #menu-items {
+    padding-top: 0;
+  }
+}

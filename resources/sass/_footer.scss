@@ -1,0 +1,100 @@
+footer {
+  .footer-menu {
+    padding: 100px 0;
+    background: $secondary-color;
+    h4 {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+    .wrapper {
+      margin-bottom: 20px;
+      color: rgba(255, 255, 255, 0.5);
+      .phone,
+      .fax,
+      .email,
+      .address,
+      .hours {
+        padding: 10px 0;
+        font-size: 0.9rem;
+        i {
+          color: rgba(255, 255, 255, 0.75);
+          width: 20px;
+        }
+        a {
+          color: rgba(255, 255, 255, 0.5);
+          text-decoration: none;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+    .twitter {
+      .tweet {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+        .author {
+          a {
+            color: $primary-color;
+          }
+        }
+        .date {
+          color: lighten($secondary-color, 20%);
+        }
+      }
+    }
+  }
+  .social-copyright {
+    padding: 25px 0;
+    background: darken($secondary-color, 5%);
+    color: lighten($secondary-color, 35%);
+
+    @include media-breakpoint-down(sm) {
+      .copyright,
+      .social {
+        text-align: center;
+      }
+      .social {
+        margin-bottom: 20px;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      .copyright {
+        text-align: right;
+      }
+      .social {
+        text-align: left;
+      }
+    }
+    .social {
+      a {
+        margin-right: 20px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: all 0.3s;
+        color: lighten($secondary-color, 40%);
+        &:hover {
+          color: #fff;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    .designer {
+      font-size: 0.8rem;
+      color: lighten($secondary-color, 25%);
+      a {
+        transition: all 0.3s;
+        text-decoration: none;
+        font-weight: bold;
+        color: lighten($secondary-color, 40%);
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

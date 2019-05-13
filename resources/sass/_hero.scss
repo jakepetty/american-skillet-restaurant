@@ -1,0 +1,33 @@
+#hero {
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    overflow: hidden;
+    font-size: 3em;
+    text-transform: capitalize;
+    @include media-breakpoint-down(sm) {
+      font-size: 2em;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 50px;
+    }
+    .btn {
+      &.btn-outline-light {
+        font-size: 2rem;
+        border-width: 2px;
+        padding: .5rem 2rem;
+        &:hover {
+          background-color:$primary-color;
+          color:#fff;
+          border-color:$primary-color;
+        }
+      }
+    }
+    p {
+      margin: 0;
+      font-family: "Marck Script", cursive;
+      font-size: 4rem;
+    }
+    
+  }
