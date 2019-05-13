@@ -5,7 +5,7 @@
         <div class="text-center">
             <p>Welcome to</p>
             <h1>{{ config('app.name') }}</h1>
-            <a href="#menu" class="btn btn-outline-light">Our Menu</a>
+            <a href="{{ route('menu') }}" class="btn btn-outline-light">Our Menu</a>
         </div>
     </div>
 </div>
