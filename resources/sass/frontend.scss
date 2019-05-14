@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url("https://fonts.googleapis.com/css?family=Marck+Script");
 // Variables
 @import "variables";
 
@@ -31,7 +31,6 @@
   align-items: center;
   text-align: center;
 }
-
 .img-wrapper {
   position: relative;
   display: block;
@@ -60,22 +59,38 @@ i {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 .parallax {
-  background-color: rgba($secondary-color, 0.85);
-  background-size: cover;
   text-transform: uppercase;
   color: #fff;
+  position: relative;
+  .container {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .bar {
   position: relative;
-  border-top:5px solid $primary-color;
-  border-bottom:5px solid $primary-color;
+  border-top: 5px solid $primary-color;
+  border-bottom: 5px solid $primary-color;
   text-align: center;
   color: #fff;
   padding: 100px 0;
   header {
+    z-index: 1;
+    position: relative;
     margin-bottom: 0;
   }
+}
+.parallax:after {
+  content: "";
+  background-color: rgba($secondary-color, 0.85);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
