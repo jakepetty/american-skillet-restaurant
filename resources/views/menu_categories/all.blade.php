@@ -3,7 +3,7 @@
 Menu | {{ config('app.name') }}
 @endsection
 @section('content')
-<section class="page-title parallax" data-parallax="scroll" data-image-src="/img/photos/1_l.jpg">
+<section class="page-title parallax" data-parallax="scroll" data-image-src="/img/menu-bg.jpg">
     <div class="container">
         <h1>American Skillet Menu</h1>
     </div>
@@ -45,7 +45,9 @@ Menu | {{ config('app.name') }}
         @foreach($menu_categories as $category)
         <div class="bar parallax mb-5" data-parallax="scroll"
             data-image-src="/img/menu_categories/{{ $category->id }}_l.{{ $category->ext }}">
-            <h2>{{ $category->name }} Menu</h2>
+            <header>
+                <h2>{{ $category->name }} Menu</h2>
+            </header>
         </div>
         <div class="container mb-5">
             @foreach($category->items as $item)

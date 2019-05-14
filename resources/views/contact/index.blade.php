@@ -4,7 +4,7 @@ Contact Us | {{ config('app.name') }}
 @endsection
 @section('content')
 
-<section class="page-title parallax" data-parallax="scroll" data-image-src="/img/1556311252_breakfast.jpg">
+<section class="page-title parallax" data-parallax="scroll" data-image-src="/img/specials-bg.jpg">
     <div class="container">
         <h1>Contact Us</h1>
     </div>
