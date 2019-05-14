@@ -8,9 +8,6 @@ class ContactController extends Controller
 {
     public function index()
     {
-
-        \Session::flash('message', __('Your message has been sent. Please allow 24-48 hours for a reply. Have a wonderful day!'));
-        \Session::flash('title', sprintf('Thank you %s', 'Jake Petty'));
         return view('contact.index');
     }
 
