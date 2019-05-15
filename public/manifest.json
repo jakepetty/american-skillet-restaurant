@@ -3,9 +3,10 @@
     "name": "American Skillet Restaurant",
     "display": "standalone",
     "start_url": "/menu",
-    "theme_color": "#000000",
+    "theme_color": "#ff0000",
     "background_color": "#ff0000",
     "orientation": "portrait",
+    "prefer_related_applications": false,
     "icons": [
         {
             "src": "/img/icon-192.png",

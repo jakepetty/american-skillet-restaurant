@@ -8,7 +8,7 @@
     <title>@yield('title', "Welcome | " . config('app.name'))</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author" content="Jake Petty">
-    <meta name="description" content="">
+    <meta name="description" content="Mid-western style restaurant located in Cedar Rapids, IA serving breakfast and lunch to the area since 1995">
     <meta name="copyright" content="{{ config('app.name') }}">
     <meta name="keywords" content="restaurant, cedar, rapids, mid-western, breakfast, lunch">
 

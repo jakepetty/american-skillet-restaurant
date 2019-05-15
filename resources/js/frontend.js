@@ -11,6 +11,7 @@ require("../../node_modules/ekko-lightbox/dist/ekko-lightbox.min.js")
 class Website {
     constructor() {
         this.navbar = document.getElementById('main-menu')
+        this.setupServiceWorker()
         this.setupNavbar()
         this.setupNavigation()
         this.setupLightbox()
@@ -18,6 +19,17 @@ class Website {
         this.setupParallax()
         this.setupWrappers()
         this.setupModal()
+    }
+    setupServiceWorker() {
+        if ('serviceWorker' in navigator) {
+           console.log("Will the service worker register?");
+           navigator.serviceWorker.register('service-worker.js')
+             .then(function(reg){
+               console.log("Yes, it did.");
+            }).catch(function(err) {
+               console.log("No it didn't. This happened:", err)
+           });
+        }
     }
     setupLightbox() {
         $(document).on('click', '[data-toggle="lightbox"]', function (event) {
