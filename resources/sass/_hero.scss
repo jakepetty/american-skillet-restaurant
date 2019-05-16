@@ -11,6 +11,9 @@
     h1 {
       font-size: 3em;
       margin-bottom: 50px;
+      @include media-breakpoint-down(xs) {
+        font-size: 2em;
+      }
     }
     .btn {
       &.btn-outline-light {
@@ -28,6 +31,9 @@
       margin: 0;
       font-family: "Marck Script", cursive;
       font-size: 4rem;
+      @include media-breakpoint-down(xs) {
+        font-size: 1em;
+      }
     }
-    
+
   }
