@@ -26,6 +26,9 @@ class HomeController extends Controller
             $date = 'today';
             $id = date('N');
         }
+        if($id === 8) {
+            $id = 1;
+        }
         $event = Event::where('id', $id)->first();
         $date = new \DateTime($date . ' ' . $event->start_time); // Date tomorrow midnight
         $special = [
