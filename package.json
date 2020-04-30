@@ -14,7 +14,7 @@
         "axios": "^0.18",
         "bootstrap": "^4.1.0",
         "cross-env": "^5.1",
-        "jquery": "^3.2",
+        "jquery": "^3.5",
         "jquery-ui": "^1.12.1",
         "jquery-parallax.js": "^1.5.0",
         "laravel-mix": "^4.0.7",
